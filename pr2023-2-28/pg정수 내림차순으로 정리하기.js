@@ -11,3 +11,12 @@ function solution(n) {
 }
 
 console.log(solution(5784397589)) // 9988775543
+
+// 초 간단식 
+
+function solution2(n){
+    let answer = [...n + ""].sort().reverse().join("");  // arr.sort().reverse() : 반대로 뒤집기
+    return answer;
+}
+
+console.log(solution2(12345678)) //  87654321
