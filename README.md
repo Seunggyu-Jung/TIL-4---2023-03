@@ -63,5 +63,28 @@ be.every((v,i) => v === af[i])
 
 
 
+- **자바스크립트로 팩토리얼 만드는 법  : 변수 *= i** : 매일 보고 익힐 것
+
+
+
+
+```
+function solution(n) {
+    let ans = 1;
+    let answer;
+    for (let i = 1 ; i <= n ; i++){     // i의 범위는 뭐든 상관없으니 주어진 매개변수로 처리해도 무관
+        ans *= i;
+        if (ans === n){
+            answer = i
+            break;              // 반복문이기에 탈출하지 않으면 값이 계속 반복됨
+        } else if (ans > n){
+            answer = i - 1
+            break;             // 반복문이기에 탈출하지 않으면 값이 계속 반복됨
+        }
+    }
+    return answer
+}
+}
+```
 
 -----------------
