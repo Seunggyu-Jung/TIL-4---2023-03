@@ -72,7 +72,7 @@ function solution(n) {
     let ans = 1;
     let answer;
     for (let i = 1 ; i <= n ; i++){     // i의 범위는 뭐든 상관없으니 주어진 매개변수로 처리해도 무관
-        ans *= i;
+        ans *= i;                       // 이 부분이 매우 중요!!
         if (ans === n){
             answer = i
             break;              // 반복문이기에 탈출하지 않으면 값이 계속 반복됨
