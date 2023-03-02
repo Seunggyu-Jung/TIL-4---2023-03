@@ -87,3 +87,23 @@ function solution(n) {
 ```
 
 -----------------
+
+<br>
+
+## 2023 - 3 - 2
+
+- arr.forEach((v,i)) => {}) : 배열을 순회하는 메서드
+
+```
+absolutes.forEach((v, i) => {
+        if (signs[i]) {
+            answer += v;
+        } else {
+            answer -= v;
+        }
+    })
+```
+
+<br>
+
+----------------------
