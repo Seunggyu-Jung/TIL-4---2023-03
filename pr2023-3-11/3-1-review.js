@@ -42,7 +42,10 @@ function solution(n) {
         if (Num > n) {
             answer = i -1;
             break;
-        } 
+        } else if (Num === n) {
+            answer = i;
+            break;
+        }
     }
     return answer;
 }
